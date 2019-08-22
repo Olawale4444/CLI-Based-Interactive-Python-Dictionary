@@ -6,7 +6,7 @@
 
 import json
 from difflib import get_close_matches
-#difflib is a library which helps find matching or closely matching words
+#difflib is a library which helps find matching or closely matching words from a given data set
 
 sourceData = json.load(open("data.json"))
 #This opens the data.json file and stores it to the variable sourceData 
@@ -38,7 +38,7 @@ def query(w):
 
  
 rt = True
-#condition for while loop, for the dictionary to keep asking the user for input.
+# This is a condition for while loop, for the dictionary to keep asking the user for input.
 
 while rt ==True:
     print('\n The Best CLI Dictionary on the Planet,------Press "N" to quit this Dictionary \n')
