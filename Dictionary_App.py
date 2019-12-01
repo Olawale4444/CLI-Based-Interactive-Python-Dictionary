@@ -38,7 +38,7 @@ def query(w):
 
  
 rt = True
-#condition for while loop, for the dictionary to keep asking the user for input.
+#condition for the while loop, for the dictionary to keep asking the user for an input.
 
 while rt ==True:
     print('\n The Best CLI Dictionary on the Planet,------Press "N" to quit this Dictionary \n')
