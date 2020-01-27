@@ -1,16 +1,9 @@
-
-
-#Python Dictionary Program
-#Olowonyo Olawale
-#twitter @wale_io 
-
 import json
 from difflib import get_close_matches
 #difflib is a library which helps find matching or closely matching words
 
 sourceData = json.load(open("data.json"))
 #This opens the data.json file and stores it to the variable sourceData 
-
 
 def query(w):
     w = w.lower()
@@ -27,18 +20,14 @@ def query(w):
             return sourceData[get_close_matches(w, sourceData.keys())[0]]
             #Checks for close matches with the library 
 
-
         elif yn == "N":
             return "This word does not exist in the Dictionary. Please try again."
         else:
             return "Wrong Input."
     else:
-        return "The word doesn't exist. Please double check it."
-        
-
- 
+        return "The word doesn't exist. Please double check it." 
 rt = True
-#condition for the while loop, for the dictionary to keep asking the user for an input.
+#condition for while loop, for the dictionary to keep asking the user for an input.
 
 while rt ==True:
     print('\n The Best CLI Dictionary on the Planet,------Press "N" to quit this Dictionary \n')
